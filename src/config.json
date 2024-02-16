@@ -1,0 +1,33 @@
+{
+    "comment": "This is the sameple configuration file. It should be the same one as the backend config.",
+    "servers": {
+        "Sample Server": {
+            "sshPort": "22",
+            "httpsPort": "444",
+            "domain": "example.com",
+            "webRoot": "/var/www/example.com/"
+        }
+    },
+    "pinned": ["Sample: Game"],
+    "packages": {
+        "Sample: Game": {
+            "Sample Platform": {
+                "configs": {
+                    "comments": "This is where you put comment in"
+                },
+                "suffix": "apk",
+                "packageName": "com.example.game",
+                "version": 123,
+                "versionString": "1.1.1",
+                "obb": {
+                    "main": "com.example.game/main.123.com.example.game.obb"
+                },
+                "allocatedServer": [
+                    "Sample Server"
+                ],
+                "source": "",
+                "url": ""
+            }
+        }
+    }
+}
